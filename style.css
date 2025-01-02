@@ -1,0 +1,204 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: url(https://c4.wallpaperflare.com/wallpaper/3/294/519/meme-background-cartoon-character-wallpaper-preview.jpg);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+/* Container for Content */
+.container {
+  max-width: 1200px;
+  /* background-color: #fff; */
+}
+h3 {
+  color: white;
+  font-size: 30px;
+}
+/* Form Styling */
+form .group-form {
+    color: white;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column; /* Stack form items vertically by default */
+  width: 100%;
+}
+
+form .form-control {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%; /* Ensures form control takes full width */
+  max-width: 500px; /* Limit the width for large screens */
+  box-sizing: border-box; /* Ensures padding is included in width */
+  margin: 0 auto; /* Center the input fields */
+}
+
+form .btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Make the button full-width on small screens */
+  max-width: 500px; /* Limit button width */
+  margin: 20px auto; /* Center the button */
+}
+
+form .btn:hover {
+  background-color: green;
+}
+
+form .btn:focus {
+  outline: none;
+}
+
+/* Meme Output Styling */
+.meme-output {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.meme-output img {
+  max-width: 100%; /* Image will scale down to fit the container */
+  height: auto;
+  border: 2px solid #333;
+  border-radius: 8px;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  margin-top: 30px;
+}
+
+/* Responsive Layout: Small Devices */
+@media (max-width: 576px) {
+  header {
+    padding: 15px 0;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  form .group-form {
+    margin-bottom: 20px;
+  }
+
+  form .form-control,
+  form .btn {
+    max-width: 100%; /* Allow inputs and buttons to take full width */
+  }
+
+  .meme-output img {
+    max-width: 100%; /* Ensure the image fits the width on mobile */
+  }
+}
+
+/* Larger Screens (Tablets, Laptops) */
+@media (min-width: 576px) {
+
+  form .group-form {
+    flex-direction: row; /* Form fields side by side */
+    align-items: center;
+  }
+
+  .group-form label {
+    flex: 0 0 25%; /* Take up 25% of the width */
+  }
+
+  .group-form .form-control,
+  .group-form .btn {
+    flex: 1; /* Take up remaining space */
+    margin-left: 20px; /* Add some space between label and input/button */
+  }
+
+  form .btn {
+    width: auto; /* Button width adjusts automatically */
+  }
+}
+
+/* Desktop and Larger Screens */
+@media (min-width: 768px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    padding: 30px;
+  }
+
+  form .group-form {
+    margin-bottom: 30px;
+  }
+
+  .group-form label {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .container {
+    padding: 40px;
+  }
+
+  form .group-form {
+    margin-bottom: 40px;
+  }
+
+  .group-form label {
+    font-size: 20px;
+  }
+}
